@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Fund_API/Grp_Fund_API/obj
+/Fund_API/Grp_Fund_API/bin/Debug/net8.0
+/Fund_API/Grp_Fund_API_Testing/bin/Debug/net8.0
+/Fund_API/Grp_Fund_API_Testing/obj
+/Fund_API/Grp_Fund_DBEngine/bin/Debug/net8.0
+/Fund_API/Grp_Fund_DBEngine/obj
+/Fund_API/Grp_Fund_Framework/bin/Debug/net8.0
+/Fund_API/Grp_Fund_Framework/obj
+/Fund_API/Grp_Fund_Model/bin/Debug/net8.0
+/Fund_API/Grp_Fund_Model/obj
+/Fund_API/Grp_Fund_Repository/bin/Debug/net8.0
+/Fund_API/Grp_Fund_Repository/obj
+/Fund_API/Grp_Fund_Service/bin/Debug/net8.0
+/Fund_API/Grp_Fund_Service/obj
+/Fund_API/.vs
