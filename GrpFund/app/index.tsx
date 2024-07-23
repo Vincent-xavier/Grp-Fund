@@ -8,7 +8,7 @@ import { router } from "expo-router";
 
 const OnboardingScreen = () => {
   const handleSkip = () => {
-    router.replace("/(tabs)");
+    router.replace("/auth/login");
   };
   return (
     <Onboarding
