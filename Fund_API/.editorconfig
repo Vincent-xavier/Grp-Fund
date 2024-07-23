@@ -107,9 +107,7 @@ csharp_preferred_modifier_order = public,private,protected,internal,file,static,
 csharp_style_prefer_readonly_struct = true:none
 csharp_style_prefer_readonly_struct_member = true:none
 
-# Code-block preferences
-csharp_prefer_braces = true:error
-csharp_prefer_simple_using_statement = false:error
+# Code-block preferences  
 csharp_style_namespace_declarations = block_scoped:error
 csharp_style_prefer_method_group_conversion = true:none
 csharp_style_prefer_top_level_statements = false:none
@@ -143,11 +141,11 @@ csharp_style_allow_embedded_statements_on_same_line_experimental = false:error
 
 # New line preferences
 csharp_new_line_before_catch = true
-csharp_new_line_before_else = true
+#csharp_new_line_before_else = true
 csharp_new_line_before_finally = true
 csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_before_members_in_object_initializers = true
-csharp_new_line_before_open_brace = all
+#csharp_new_line_before_open_brace = all
 csharp_new_line_between_query_expression_clauses = true
 
 # Indentation preferences
@@ -269,6 +267,7 @@ dotnet_diagnostic.CA2252.severity = error
 dotnet_diagnostic.CA2244.severity = error
 dotnet_diagnostic.CA2246.severity = error
 dotnet_diagnostic.MVC1006.severity = error
+dotnet_diagnostic.CS1591.severity = none
 
 [*.{cs,vb}]
 dotnet_style_coalesce_expression = true:error
@@ -371,7 +370,7 @@ dotnet_diagnostic.IDE0046.severity = none
 dotnet_diagnostic.IDE0017.severity = none
 dotnet_diagnostic.IDE0028.severity = none
 dotnet_diagnostic.IDE0055.severity = error
-dotnet_diagnostic.IDE0005.severity = none
+dotnet_diagnostic.IDE0005.severity = error
 dotnet_diagnostic.IDE0001.severity = error
 dotnet_analyzer_diagnostic.category-Design.severity = error
 dotnet_analyzer_diagnostic.category-Documentation.severity = error
@@ -386,5 +385,38 @@ dotnet_analyzer_diagnostic.category-Security.severity = error
 dotnet_analyzer_diagnostic.category-Style.severity = error
 dotnet_analyzer_diagnostic.category-CodeQuality.severity = error
 
-[*.vb]
-dotnet_diagnostic.CA1047.severity = error
+##Custom Error skipping by Dev team 
+
+dotnet_diagnostic.CA2211.severity = none
+dotnet_diagnostic.IDE0063.severity = none
+dotnet_diagnostic.SYSLIB0041.severity = none
+dotnet_diagnostic.CA5379.severity = none
+dotnet_diagnostic.IDE0230.severity = none
+dotnet_diagnostic.CA1062.severity = none
+#dotnet_diagnostic.CA1051.severity = none
+dotnet_diagnostic.IDE0011.severity = none 
+dotnet_diagnostic.SYSLIB0023.severity = none
+dotnet_diagnostic.CS8767.severity = none
+dotnet_diagnostic.CA1852.severity = none
+dotnet_diagnostic.CS8618.severity = error
+
+# To check object is null or Dereference of a possibly null reference
+dotnet_diagnostic.CS8602.severity = none
+dotnet_diagnostic.CS8603.severity = none
+dotnet_diagnostic.CS8604.severity = none
+dotnet_diagnostic.CS8618.severity = none
+dotnet_diagnostic.CS0161.severity = none
+dotnet_diagnostic.CA5369.severity = none
+
+dotnet_diagnostic.IDE0044.severity = none
+dotnet_diagnostic.IDE0052.severity = none
+
+# for Automation 
+dotnet_diagnostic.CA1062.severity = none
+dotnet_diagnostic.CA1051.severity = none
+dotnet_diagnostic.IDE0059.severity = none
+
+dotnet_diagnostic.IDE1006.severity = error
+dotnet_diagnostic.IDE0011.severity = error
+
+  
