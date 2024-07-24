@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function HomeScreen() {
+
+export default function Transaction() {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Text>Tab 1</Text>
     </View>
   );
 }

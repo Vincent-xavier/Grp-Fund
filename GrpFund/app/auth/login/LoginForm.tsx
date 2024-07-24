@@ -1,4 +1,5 @@
 import InputField from "@/components/form-controls/InputField";
+import { router } from "expo-router";
 import { SubmitHandler, useForm } from "react-hook-form";
 import {
   View,
@@ -19,6 +20,7 @@ const LoginForm = () => {
 
   const onSubmit = (data: LoginFormInputs) => {
     alert(JSON.stringify(data));
+    router.push("/(tabs)");
   };
 
   return (
