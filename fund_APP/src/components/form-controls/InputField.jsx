@@ -1,14 +1,8 @@
-import { useController } from "react-hook-form";
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import {useController} from 'react-hook-form';
+import {StyleSheet, Text, TextInput, View} from 'react-native';
 
-const InputField: React.FC<{
-  name: string;
-  control: any;
-  rules?: any;
-  placeholder?: string;
-  secureTextEntry?: boolean;
-}> = ({ name, control, rules, placeholder, secureTextEntry }) => {
-  const { field, fieldState } = useController({
+const InputField = ({name, control, rules, placeholder, secureTextEntry}) => {
+  const {field, fieldState} = useController({
     name,
     control,
     rules,
@@ -36,16 +30,16 @@ export default InputField;
 const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
-    borderColor: "#ccc",
+    borderColor: '#ccc',
     borderRadius: 8,
     height: 50,
     paddingHorizontal: 15,
     marginVertical: 10,
   },
   errorBorder: {
-    borderColor: "red",
+    borderColor: 'red',
   },
   errorText: {
-    color: "red",
+    color: 'red',
   },
 });

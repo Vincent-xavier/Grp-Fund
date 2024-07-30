@@ -6,7 +6,9 @@ import {Button} from 'react-native-paper';
 
 const LoginForm = () => {
   const navigation = useNavigation();
-  const {control, handleSubmit} = useForm();
+  const {control, handleSubmit} = useForm({
+    defaultValues: {email: 'test', password: 'test'},
+  });
 
   const onSubmit = data => {
     alert(JSON.stringify(data));

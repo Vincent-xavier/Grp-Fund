@@ -16,7 +16,6 @@ const Navigation = () => {
       }}>
       <Stack.Screen name="Onboarding" component={OnboardingScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
-
       <Stack.Screen name="Home" component={TabNavigation} />
     </Stack.Navigator>
   );
