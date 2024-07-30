@@ -1,14 +1,15 @@
-import { StyleSheet } from "react-native";
-import React from "react";
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
 
-//Onboarding package
-import Onboarding from "react-native-onboarding-swiper";
-import LottieView from "lottie-react-native";
-import { router } from "expo-router";
+import Onboarding from 'react-native-onboarding-swiper';
+import LottieView from 'lottie-react-native';
+import {useNavigation} from '@react-navigation/native';
 
 const OnboardingScreen = () => {
+  const navigation = useNavigation();
+
   const handleSkip = () => {
-    // router.replace("");
+    navigation.navigate('Login');
   };
   return (
     <Onboarding
@@ -24,44 +25,44 @@ const OnboardingScreen = () => {
       }}
       pages={[
         {
-          backgroundColor: "#fff",
+          backgroundColor: '#fff',
           image: (
             <LottieView
               autoPlay
               style={styles.lottie}
-              source={require("../assets/animations/onboarding1.json")}
+              source={require('../../assets/animations/onboarding1.json')}
             />
           ),
-          title: "Welcome to Grp Funds!",
+          title: 'Welcome to Grp Funds!',
           subtitle:
             "Ready to make managing group funds simple and stress-free? Let's get started!",
         },
         {
-          backgroundColor: "#fff",
+          backgroundColor: '#fff',
           image: (
             <LottieView
               autoPlay
               style={styles.lottie}
-              source={require("../assets/animations/onboarding3.json")}
+              source={require('../../assets/animations/onboarding3.json')}
             />
           ),
-          title: "Collect Contributions",
+          title: 'Collect Contributions',
           subtitle:
-            "Invite members to contribute to the group fund with just a few taps. Transparent and hassle-free!",
+            'Invite members to contribute to the group fund with just a few taps. Transparent and hassle-free!',
         },
         {
-          backgroundColor: "#fff",
+          backgroundColor: '#fff',
           image: (
             <LottieView
               autoPlay
               style={styles.lottie}
-              source={require("../assets/animations/onboarding2.json")}
+              source={require('../../assets/animations/onboarding2.json')}
             />
           ),
 
-          title: "Track Expenses",
+          title: 'Track Expenses',
           subtitle:
-            "Keep a record of every transaction. Ensure everyone knows where the money goes, every step of the way.",
+            'Keep a record of every transaction. Ensure everyone knows where the money goes, every step of the way.',
         },
       ]}
     />
