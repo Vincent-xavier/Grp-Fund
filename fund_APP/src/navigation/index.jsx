@@ -7,14 +7,16 @@ import LoginScreen from '../screens/auth/login';
 // Tab Navigation
 import TabNavigation from './TabNavigation';
 
-const Navigation = () => {
+const Navigation = ({isFirstLoad}) => {
   const Stack = createNativeStackNavigator();
   return (
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name="Onboarding" component={OnboardingScreen} />
+      {isFirstLoad && (
+        <Stack.Screen name="Onboarding" component={OnboardingScreen} />
+      )}
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Home" component={TabNavigation} />
     </Stack.Navigator>
