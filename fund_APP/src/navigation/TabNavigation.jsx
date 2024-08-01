@@ -1,7 +1,11 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {StyleSheet} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+
+// components
 import BottomBar from '../components/navigation/BottomBar';
+
+// screens
 import HomeScreen from '../screens/home';
 import Transaction from '../screens/home/Transactions';
 import profile from '../screens/home/Profile';

@@ -1,6 +1,7 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import {AntDesign, Feather} from 'react-native-vector-icons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import Feather from 'react-native-vector-icons/Feather';
 
 const BottomBar = ({state, descriptors, navigation}) => {
   const icons = {
@@ -8,7 +9,6 @@ const BottomBar = ({state, descriptors, navigation}) => {
     transactions: props => <Feather name="compass" size={24} {...props} />,
     profile: props => <Feather name="compass" size={24} {...props} />,
   };
-  console.log(state.routes);
   return (
     <View style={styles.tabContainer}>
       {state.routes.map((route, index) => {
@@ -51,10 +51,10 @@ const BottomBar = ({state, descriptors, navigation}) => {
             onPress={onPress}
             onLongPress={onLongPress}
             style={styles.tabButton}>
-            {/* {icons[route.name]({
+            {icons[route.name]({
               size: 24,
               color: isFocused ? '#673ab7' : '#222',
-            })} */}
+            })}
             <Text style={{color: isFocused ? '#673ab7' : '#222'}}>{label}</Text>
           </TouchableOpacity>
         );
