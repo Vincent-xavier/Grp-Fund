@@ -1,7 +1,7 @@
-import MainLayout from "./layout";
+import Routes from "./routes";
 
 function App() {
-  return <MainLayout />;
+  return <Routes />;
 }
 
 export default App;

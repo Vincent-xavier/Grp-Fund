@@ -7,18 +7,16 @@
 .logo-containner {
   display: flex;
   align-items: center;
-  height: calc(70px);
+  height: calc(64px);
   padding-inline: 14px;
   line-height: 81px;
   justify-content: center;
 }
 
 .toggle-button {
-  height: 30px;
-  width: 30px;
-  padding: 2px;
   position: absolute;
   background: rgb(255, 255, 255);
   border: 1px solid rgb(239, 242, 247);
   right: -14px;
+  border-radius: 4px;
 }
